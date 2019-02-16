@@ -8,6 +8,15 @@ namespace PadawansTask5
         {
             // put your code here
             //throw new NotImplementedException();
+            if (source.Length == 0)
+            {
+                throw new ArgumentException();
+            }
+
+            if (source == null)
+            {
+                throw new ArgumentNullException();
+            }
             foreach (int s in source)
             {
                 if (s != 0 && s != 1)
@@ -16,10 +25,6 @@ namespace PadawansTask5
                 }
             }
 
-            if (source.Length % 2 != 0)
-            {
-                return "No";
-            }
             bool flag = true;
             for (int i = 0; i < source.Length / 2; i++)
             {
