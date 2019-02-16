@@ -8,14 +8,15 @@ namespace PadawansTask5
         {
             // put your code here
             //throw new NotImplementedException();
-            if (source.Length == 0)
-            {
-                throw new ArgumentException();
-            }
 
             if (source == null)
             {
                 throw new ArgumentNullException();
+            }
+
+            if (source.Length == 0)
+            {
+                throw new ArgumentException();
             }
             foreach (int s in source)
             {
